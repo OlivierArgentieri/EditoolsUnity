@@ -253,13 +253,23 @@ namespace EditoolsUnity
         }
 
         /// <summary>
-        /// Create Start or End GUILayout
+        /// Create Start or End GUILayout Horizontal
         /// </summary>
         /// <param name="_begin"></param>
         public static void Horizontal(bool _begin)
         {
             if (_begin) EditorGUILayout.BeginHorizontal();
             else EditorGUILayout.EndHorizontal();
+        }
+
+        /// <summary>
+        /// Create Start or End GUILayout Vertical
+        /// </summary>
+        /// <param name="_begin"></param>
+        public static void Vertical(bool _begin)
+        {
+            if (_begin) EditorGUILayout.BeginVertical();
+            else EditorGUILayout.EndVertical();
         }
     }
 }
