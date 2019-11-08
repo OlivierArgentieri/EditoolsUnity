@@ -1,0 +1,173 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>EditoolsUnity</name>
+    </assembly>
+    <members>
+        <member name="T:EditoolsUnity.EditoolsButton">
+            <summary>
+            Class button of Editools
+            </summary>
+        </member>
+        <member name="M:EditoolsUnity.EditoolsButton.Button(System.String,UnityEngine.Color,System.Action)">
+            <summary>
+            Create button without parameters in callback
+            </summary>
+            <param name="_label"></param>
+            <param name="_c"></param>
+            <param name="_callback"></param>
+        </member>
+        <member name="M:EditoolsUnity.EditoolsButton.Button``1(System.String,UnityEngine.Color,System.Action{``0},``0)">
+            <summary>
+            Create button with parameter in callback
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="_label"></param>
+            <param name="_c"></param>
+            <param name="_callback"></param>
+            <param name="_arg0"></param>
+        </member>
+        <member name="M:EditoolsUnity.EditoolsButton.Button``2(System.String,UnityEngine.Color,System.Action{``0,``1},``0,``1)">
+            <summary>
+            Create button with parameters in callback
+            </summary>
+            <typeparam name="T1"></typeparam>
+            <typeparam name="T2"></typeparam>
+            <param name="_label"></param>
+            <param name="_c"></param>
+            <param name="_callback"></param>
+            <param name="_arg0"></param>
+            <param name="_arg1"></param>
+        </member>
+        <member name="M:EditoolsUnity.EditoolsButton.Button``3(System.String,UnityEngine.Color,System.Action{``0,``1,``2},``0,``1,``2)">
+            <summary>
+            Create button with parameters in callback
+            </summary>
+            <typeparam name="T1"></typeparam>
+            <typeparam name="T2"></typeparam>
+            <typeparam name="T3"></typeparam>
+            <param name="_label"></param>
+            <param name="_c"></param>
+            <param name="_callback"></param>
+            <param name="_arg0"></param>
+            <param name="_arg1"></param>
+            <param name="_arg2"></param>
+        </member>
+        <member name="M:EditoolsUnity.EditoolsButton.ButtonWithConfirm(System.String,UnityEngine.Color,System.Action,System.String,System.String,System.String,System.String)">
+            <summary>
+            Create button and confirm box without parameters in callback
+            </summary>
+            <param name="_label"></param>
+            <param name="_c"></param>
+            <param name="_callback"></param>
+            <param name="_titleConfirm"></param>
+            <param name="_textConfirm"></param>
+            <param name="_validTest"></param>
+            <param name="_cancelText"></param>
+        </member>
+        <member name="M:EditoolsUnity.EditoolsButton.ButtonWithConfirm``1(System.String,UnityEngine.Color,System.Action{``0},``0,System.String,System.String,System.String,System.String)">
+            <summary>
+            Create button and confirm box with parameter in callback
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="_label"></param>
+            <param name="_c"></param>
+            <param name="_callback"></param>
+            <param name="_arg0"></param>
+            <param name="_titleConfirm"></param>
+            <param name="_textConfirm"></param>
+            <param name="_validTest"></param>
+            <param name="_cancelText"></param>
+        </member>
+        <member name="M:EditoolsUnity.EditoolsButton.ButtonWithConfirm``2(System.String,UnityEngine.Color,System.Action{``0,``1},``0,``1,System.String,System.String,System.String,System.String)">
+            <summary>
+            Create button and confirm box with parameters in callback
+            </summary>
+            <typeparam name="T1"></typeparam>
+            <typeparam name="T2"></typeparam>
+            <param name="_label"></param>
+            <param name="_c"></param>
+            <param name="_callback"></param>
+            <param name="_arg0"></param>
+            <param name="_arg1"></param>
+            <param name="_titleConfirm"></param>
+            <param name="_textConfirm"></param>
+            <param name="_validTest"></param>
+            <param name="_cancelText"></param>
+        </member>
+        <member name="M:EditoolsUnity.EditoolsButton.ButtonWithConfirm``3(System.String,UnityEngine.Color,System.Action{``0,``1,``2},``0,``1,``2,System.String,System.String,System.String,System.String)">
+            <summary>
+            Create button and confirm box with parameters in callback
+            </summary>
+            <typeparam name="T1"></typeparam>
+            <typeparam name="T2"></typeparam>
+            <typeparam name="T3"></typeparam>
+            <param name="_label"></param>
+            <param name="_c"></param>
+            <param name="_callback"></param>
+            <param name="_arg0"></param>
+            <param name="_arg1"></param>
+            <param name="_arg3"></param>
+            <param name="_titleConfirm"></param>
+            <param name="_textConfirm"></param>
+            <param name="_validTest"></param>
+            <param name="_cancelText"></param>
+        </member>
+        <member name="T:EditoolsUnity.EditoolsField">
+            <summary>
+            Class field of Editools
+            </summary>
+        </member>
+        <member name="M:EditoolsUnity.EditoolsField.TextField(System.String,System.String@)">
+            <summary>
+            Create Text field with out data
+            </summary>
+            <param name="_label"></param>
+            <param name="_output"></param>
+        </member>
+        <member name="M:EditoolsUnity.EditoolsField.Vector3Field(System.String,UnityEngine.Vector3)">
+            <summary>
+            Create Vector3 field with return vector3 data
+            </summary>
+            <param name="_label"></param>
+            <param name="_vector3"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EditoolsUnity.EditoolsField.ColorField(UnityEngine.Color,UnityEngine.Color@)">
+            <summary>
+            Create Color field with out data
+            </summary>
+            <param name="_color"></param>
+            <param name="_outColor"></param>
+        </member>
+        <member name="T:EditoolsUnity.EditoolsBox">
+            <summary>
+            Class box of editools
+            </summary>
+        </member>
+        <member name="M:EditoolsUnity.EditoolsBox.HelpBox(System.String,UnityEditor.MessageType)">
+            <summary>
+            Create HelpBox
+            </summary>
+            <param name="_message"></param>
+            <param name="_messageType"></param>
+        </member>
+        <member name="T:EditoolsUnity.EditoolsLayout">
+            <summary>
+            Class Layout of editools
+            </summary>
+        </member>
+        <member name="M:EditoolsUnity.EditoolsLayout.Space(System.Int32)">
+            <summary>
+            Create Space with repeting parameters
+            </summary>
+            <param name="_i"></param>
+        </member>
+        <member name="M:EditoolsUnity.EditoolsLayout.Horizontal(System.Boolean)">
+            <summary>
+            Create Start or End GUILayout
+            </summary>
+            <param name="_begin"></param>
+        </member>
+    </members>
+</doc>
