@@ -164,7 +164,7 @@ namespace EditoolsUnity
         /// <param name="_callback"></param>
         /// <param name="_arg0"></param>
         /// <param name="_arg1"></param>
-        /// <param name="_arg3"></param>
+        /// <param name="_arg2"></param>
         /// <param name="_titleConfirm"></param>
         /// <param name="_textConfirm"></param>
         /// <param name="_validTest"></param>
