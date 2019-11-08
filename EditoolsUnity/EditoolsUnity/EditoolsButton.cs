@@ -233,6 +233,24 @@ namespace EditoolsUnity
         {
             EditorGUILayout.HelpBox(_message, _messageType);
         }
+
+        /// <summary>
+        /// Create Warning HelpBox
+        /// </summary>
+        /// <param name="_message"></param>
+        public static void HelpBoxWarning(string _message) => HelpBox(_message, MessageType.Warning);
+        
+        /// <summary>
+        /// Create Error Warning
+        /// </summary>
+        /// <param name="_message"></param>
+        public static void HelpBoxError(string _message) => HelpBox(_message, MessageType.Error);
+        
+        /// <summary>
+        /// Create Info Helpbox
+        /// </summary>
+        /// <param name="_message"></param>
+        public static void HelpBoxInfo(string _message) => HelpBox(_message, MessageType.Info);
     }
 
     /// <summary>
@@ -271,5 +289,26 @@ namespace EditoolsUnity
             if (_begin) EditorGUILayout.BeginVertical();
             else EditorGUILayout.EndVertical();
         }
+
+        /// <summary>
+        /// Create Foldout and return the boolean value
+        /// </summary>
+        /// <param name="_foldout"></param>
+        /// <param name="_text"></param>
+        /// <param name="_toogleOnClick"></param>
+        /// <returns></returns>
+        public static bool Foldout(bool _foldout, string _text, bool _toogleOnClick = true)
+        {
+            return EditorGUILayout.Foldout(_foldout, _text, _toogleOnClick);
+        }
+
+        /// <summary>
+        /// Create Foldout and return the boolean value by ref
+        /// </summary>
+        /// <param name="_value"></param>
+        /// <param name="_title"></param>
+        /// <param name="_isWide"></param>
+        /// <returns></returns>
+        public static bool Foldout(ref bool _value, string _title, bool _isWide = false) => _value = EditorGUILayout.Foldout(_value, _title, _isWide);
     }
 }

@@ -107,7 +107,7 @@
             <param name="_callback"></param>
             <param name="_arg0"></param>
             <param name="_arg1"></param>
-            <param name="_arg3"></param>
+            <param name="_arg2"></param>
             <param name="_titleConfirm"></param>
             <param name="_textConfirm"></param>
             <param name="_validTest"></param>
@@ -165,9 +165,33 @@
         </member>
         <member name="M:EditoolsUnity.EditoolsLayout.Horizontal(System.Boolean)">
             <summary>
-            Create Start or End GUILayout
+            Create Start or End GUILayout Horizontal
             </summary>
             <param name="_begin"></param>
+        </member>
+        <member name="M:EditoolsUnity.EditoolsLayout.Vertical(System.Boolean)">
+            <summary>
+            Create Start or End GUILayout Vertical
+            </summary>
+            <param name="_begin"></param>
+        </member>
+        <member name="M:EditoolsUnity.EditoolsLayout.Foldout(System.Boolean,System.String,System.Boolean)">
+            <summary>
+            Create Foldout and return the boolean value
+            </summary>
+            <param name="_foldout"></param>
+            <param name="_text"></param>
+            <param name="_toogleOnClick"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EditoolsUnity.EditoolsLayout.Foldout(System.Boolean@,System.String,System.Boolean)">
+            <summary>
+            Create Foldout and return the boolean value by ref
+            </summary>
+            <param name="_value"></param>
+            <param name="_title"></param>
+            <param name="_isWide"></param>
+            <returns></returns>
         </member>
     </members>
 </doc>
