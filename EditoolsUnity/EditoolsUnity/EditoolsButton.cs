@@ -15,13 +15,17 @@ namespace EditoolsUnity
         /// <param name="_label"></param>
         /// <param name="_c"></param>
         /// <param name="_callback"></param>
-        public static void Button(string _label, Color _c, Action _callback)
+        /// <param name="_showCondition"></param>
+        public static void Button(string _label, Color _c, Action _callback, bool _showCondition = true)
         {
+            if (!_showCondition) return;
+
             GUI.color = _c;
             if (GUILayout.Button(_label))
                 _callback?.Invoke();
             GUI.color = Color.white;
         }
+
 
         /// <summary>
         /// Create button with parameter in callback
@@ -31,8 +35,10 @@ namespace EditoolsUnity
         /// <param name="_c"></param>
         /// <param name="_callback"></param>
         /// <param name="_arg0"></param>
-        public static void Button<T>(string _label, Color _c, Action<T> _callback, T _arg0)
+        /// <param name="_showCondition"></param>
+        public static void Button<T>(string _label, Color _c, Action<T> _callback, T _arg0, bool _showCondition = true)
         {
+            if (!_showCondition) return;
             GUI.color = _c;
             if (GUILayout.Button(_label))
                 _callback?.Invoke(_arg0);
@@ -49,8 +55,10 @@ namespace EditoolsUnity
         /// <param name="_callback"></param>
         /// <param name="_arg0"></param>
         /// <param name="_arg1"></param>
-        public static void Button<T1, T2>(string _label, Color _c, Action<T1, T2> _callback, T1 _arg0, T2 _arg1)
+        /// <param name="_showCondition"></param>
+        public static void Button<T1, T2>(string _label, Color _c, Action<T1, T2> _callback, T1 _arg0, T2 _arg1, bool _showCondition = true)
         {
+            if (!_showCondition) return;
             GUI.color = _c;
             if (GUILayout.Button(_label))
                 _callback?.Invoke(_arg0, _arg1);
@@ -71,8 +79,10 @@ namespace EditoolsUnity
         /// <param name="_arg0"></param>
         /// <param name="_arg1"></param>
         /// <param name="_arg2"></param>
-        public static void Button<T1, T2, T3>(string _label, Color _c, Action<T1, T2, T3> _callback, T1 _arg0, T2 _arg1, T3 _arg2)
+        /// <param name="_showCondition"></param>
+        public static void Button<T1, T2, T3>(string _label, Color _c, Action<T1, T2, T3> _callback, T1 _arg0, T2 _arg1, T3 _arg2, bool _showCondition = true)
         {
+            if (!_showCondition) return;
             GUI.color = _c;
             if (GUILayout.Button(_label))
                 _callback?.Invoke(_arg0, _arg1, _arg2);
@@ -90,8 +100,10 @@ namespace EditoolsUnity
         /// <param name="_textConfirm"></param>
         /// <param name="_validTest"></param>
         /// <param name="_cancelText"></param>
-        public static void ButtonWithConfirm(string _label, Color _c, Action _callback, string _titleConfirm, string _textConfirm, string _validTest = "Ok", string _cancelText = "Cancel")
+        /// <param name="_showCondition"></param>
+        public static void ButtonWithConfirm(string _label, Color _c, Action _callback, string _titleConfirm, string _textConfirm, string _validTest = "Ok", string _cancelText = "Cancel", bool _showCondition = true)
         {
+            if (!_showCondition) return;
             GUI.color = _c;
             if (GUILayout.Button(_label))
             {
@@ -114,8 +126,10 @@ namespace EditoolsUnity
         /// <param name="_textConfirm"></param>
         /// <param name="_validTest"></param>
         /// <param name="_cancelText"></param>
-        public static void ButtonWithConfirm<T>(string _label, Color _c, Action<T> _callback, T _arg0, string _titleConfirm, string _textConfirm, string _validTest = "Ok", string _cancelText = "Cancel")
+        /// <param name="_showCondition"></param>
+        public static void ButtonWithConfirm<T>(string _label, Color _c, Action<T> _callback, T _arg0, string _titleConfirm, string _textConfirm, string _validTest = "Ok", string _cancelText = "Cancel", bool _showCondition = true)
         {
+            if (!_showCondition) return;
             GUI.color = _c;
             if (GUILayout.Button(_label))
             {
@@ -140,8 +154,10 @@ namespace EditoolsUnity
         /// <param name="_textConfirm"></param>
         /// <param name="_validTest"></param>
         /// <param name="_cancelText"></param>
-        public static void ButtonWithConfirm<T1, T2>(string _label, Color _c, Action<T1, T2> _callback, T1 _arg0, T2 _arg1, string _titleConfirm, string _textConfirm, string _validTest = "Ok", string _cancelText = "Cancel")
+        /// <param name="_showCondition"></param>
+        public static void ButtonWithConfirm<T1, T2>(string _label, Color _c, Action<T1, T2> _callback, T1 _arg0, T2 _arg1, string _titleConfirm, string _textConfirm, string _validTest = "Ok", string _cancelText = "Cancel", bool _showCondition = true)
         {
+            if (!_showCondition) return;
             GUI.color = _c;
             if (GUILayout.Button(_label))
             {
@@ -169,8 +185,10 @@ namespace EditoolsUnity
         /// <param name="_textConfirm"></param>
         /// <param name="_validTest"></param>
         /// <param name="_cancelText"></param>
-        public static void ButtonWithConfirm<T1, T2, T3>(string _label, Color _c, Action<T1, T2, T3> _callback, T1 _arg0, T2 _arg1, T3 _arg2, string _titleConfirm, string _textConfirm, string _validTest = "Ok", string _cancelText = "Cancel")
+        /// <param name="_showCondition"></param>
+        public static void ButtonWithConfirm<T1, T2, T3>(string _label, Color _c, Action<T1, T2, T3> _callback, T1 _arg0, T2 _arg1, T3 _arg2, string _titleConfirm, string _textConfirm, string _validTest = "Ok", string _cancelText = "Cancel", bool _showCondition = true)
         {
+            if (!_showCondition) return;
             GUI.color = _c;
             if (GUILayout.Button(_label))
             {
@@ -310,5 +328,16 @@ namespace EditoolsUnity
         /// <param name="_isWide"></param>
         /// <returns></returns>
         public static bool Foldout(ref bool _value, string _title, bool _isWide = false) => _value = EditorGUILayout.Foldout(_value, _title, _isWide);
+    }
+
+    public class EditorCustom<T> : Editor where T : MonoBehaviour
+    {
+        protected T eTarget = default(T); // editor target
+
+        protected virtual void OnEnable()
+        {
+            eTarget = (T)target;
+            eTarget.name = $"{ typeof(T).Name}";
+        }
     }
 }
