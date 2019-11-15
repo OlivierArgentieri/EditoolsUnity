@@ -141,12 +141,51 @@
             <param name="_vector3"></param>
             <returns></returns>
         </member>
+        <member name="M:EditoolsUnity.EditoolsField.FloatField(System.String,System.Single@)">
+            <summary>
+            Create float field with OutPut Value
+            </summary>
+            <param name="_label"></param>
+            <param name="_output"></param>
+        </member>
+        <member name="M:EditoolsUnity.EditoolsField.FloatField(System.String,System.Single)">
+            <summary>
+            Create float field
+            </summary>
+            <param name="_label"></param>
+            <param name="_value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EditoolsUnity.EditoolsField.IntField(System.String,System.Int32@)">
+            <summary>
+            Create Int field with output parameter
+            </summary>
+            <param name="_label"></param>
+            <param name="_output"></param>
+        </member>
+        <member name="M:EditoolsUnity.EditoolsField.IntField(System.String,System.Int32)">
+            <summary>
+            Create Int field
+            </summary>
+            <param name="_label"></param>
+            <param name="_value"></param>
+            <returns></returns>
+        </member>
         <member name="M:EditoolsUnity.EditoolsField.ColorField(UnityEngine.Color,UnityEngine.Color@)">
             <summary>
             Create Color field with out data
             </summary>
             <param name="_color"></param>
             <param name="_outColor"></param>
+        </member>
+        <member name="M:EditoolsUnity.EditoolsField.IntSlider(System.String,System.Int32@,System.Int32,System.Int32)">
+            <summary>
+            Create Int Slider
+            </summary>
+            <param name="_label"></param>
+            <param name="_value"></param>
+            <param name="_leftValue"></param>
+            <param name="_rightValue"></param>
         </member>
         <member name="T:EditoolsUnity.EditoolsBox">
             <summary>
@@ -218,6 +257,63 @@
             <param name="_title"></param>
             <param name="_isWide"></param>
             <returns></returns>
+        </member>
+        <member name="T:EditoolsUnity.EditoolsHandle">
+            <summary>
+            Control and Drawing in the 3D scene view
+            </summary>
+        </member>
+        <member name="M:EditoolsUnity.EditoolsHandle.PositionHandle(UnityEngine.Vector3@,UnityEngine.Quaternion)">
+            <summary>
+            Edit position of ref parameter in the secene view
+            </summary>
+            <param name="_position"></param>
+            <param name="_rotation"></param>
+        </member>
+        <member name="M:EditoolsUnity.EditoolsHandle.ScaleHandle(UnityEngine.Vector3@,UnityEngine.Vector3,UnityEngine.Quaternion,System.Single)">
+            <summary>
+            Edit Scale of ref parameter in the scene view 
+            </summary>
+            <param name="_scale"></param>
+            <param name="_position"></param>
+            <param name="_rotation"></param>
+            <param name="_size"></param>
+        </member>
+        <member name="M:EditoolsUnity.EditoolsHandle.RotationHandle(UnityEngine.Quaternion@,UnityEngine.Vector3)">
+            <summary>
+            Edit Rotation of ref parameter in the scene view 
+            </summary>
+            <param name="_rotation"></param>
+            <param name="_position"></param>
+        </member>
+        <member name="M:EditoolsUnity.EditoolsHandle.SetColor(UnityEngine.Color)">
+            <summary>
+            Set current Handle Color
+            </summary>
+            <param name="_color"></param>
+        </member>
+        <member name="M:EditoolsUnity.EditoolsHandle.DrawWireCube(UnityEngine.Vector3,UnityEngine.Vector3)">
+            <summary>
+            Draw WireCube
+            </summary>
+            <param name="_position"></param>
+            <param name="_size"></param>
+        </member>
+        <member name="M:EditoolsUnity.EditoolsHandle.DrawDottedLine(UnityEngine.Vector3,UnityEngine.Vector3,System.Single)">
+            <summary>
+            Draw Dotted Line
+            </summary>
+            <param name="_position1"></param>
+            <param name="_position2"></param>
+            <param name="_screenSpaceSize"></param>
+        </member>
+        <member name="M:EditoolsUnity.EditoolsHandle.DrawWireDisc(UnityEngine.Vector3,UnityEngine.Vector3,System.Single)">
+            <summary>
+            Draw Wire Disc
+            </summary>
+            <param name="_position"></param>
+            <param name="_normal"></param>
+            <param name="_radius"></param>
         </member>
     </members>
 </doc>

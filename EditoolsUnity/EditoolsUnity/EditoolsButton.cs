@@ -227,6 +227,52 @@ namespace EditoolsUnity
         }
 
         /// <summary>
+        /// Create float field with OutPut Value
+        /// </summary>
+        /// <param name="_label"></param>
+        /// <param name="_output"></param>
+        public static void FloatField(string _label, ref float _output)
+        {
+            _output = EditorGUILayout.FloatField(_label, _output);
+        }
+
+
+        /// <summary>
+        /// Create float field
+        /// </summary>
+        /// <param name="_label"></param>
+        /// <param name="_value"></param>
+        /// <returns></returns>
+        public static float FloatField(string _label, float _value)
+        {
+            return EditorGUILayout.FloatField(_label, _value);
+        }
+
+
+        /// <summary>
+        /// Create Int field with output parameter
+        /// </summary>
+        /// <param name="_label"></param>
+        /// <param name="_output"></param>
+        public static void IntField(string _label, ref int _output)
+        {
+            _output = EditorGUILayout.IntField(_label, _output);
+        }
+
+
+        /// <summary>
+        /// Create Int field
+        /// </summary>
+        /// <param name="_label"></param>
+        /// <param name="_value"></param>
+        /// <returns></returns>
+        public static int IntField(string _label, int _value)
+        {
+            return EditorGUILayout.IntField(_label, _value);
+        }
+
+
+        /// <summary>
         /// Create Color field with out data
         /// </summary>
         /// <param name="_color"></param>
@@ -234,6 +280,18 @@ namespace EditoolsUnity
         public static void ColorField(Color _color, out Color _outColor)
         {
             _outColor = EditorGUILayout.ColorField(_color);
+        }
+
+        /// <summary>
+        /// Create Int Slider
+        /// </summary>
+        /// <param name="_label"></param>
+        /// <param name="_value"></param>
+        /// <param name="_leftValue"></param>
+        /// <param name="_rightValue"></param>
+        public static void IntSlider(string _label, ref int _value, int _leftValue, int _rightValue)
+        {
+            _value = EditorGUILayout.IntSlider(_label, _value, _leftValue, _rightValue);
         }
     }
 
@@ -257,13 +315,13 @@ namespace EditoolsUnity
         /// </summary>
         /// <param name="_message"></param>
         public static void HelpBoxWarning(string _message) => HelpBox(_message, MessageType.Warning);
-        
+
         /// <summary>
         /// Create Error Warning
         /// </summary>
         /// <param name="_message"></param>
         public static void HelpBoxError(string _message) => HelpBox(_message, MessageType.Error);
-        
+
         /// <summary>
         /// Create Info Helpbox
         /// </summary>
@@ -280,7 +338,7 @@ namespace EditoolsUnity
         /// Create Space with repeting parameters
         /// </summary>
         /// <param name="_i"></param>
-        public static void Space(int _i)
+        public static void Space(int _i=1)
         {
             for (int i = 0; i < _i; i++)
             {
@@ -328,6 +386,89 @@ namespace EditoolsUnity
         /// <param name="_isWide"></param>
         /// <returns></returns>
         public static bool Foldout(ref bool _value, string _title, bool _isWide = false) => _value = EditorGUILayout.Foldout(_value, _title, _isWide);
+    }
+
+    /// <summary>
+    /// Control and Drawing in the 3D scene view
+    /// </summary>
+    public static class EditoolsHandle
+    {
+        /// <summary>
+        /// Edit position of ref parameter in the secene view
+        /// </summary>
+        /// <param name="_position"></param>
+        /// <param name="_rotation"></param>
+        public static void PositionHandle(ref Vector3 _position, Quaternion _rotation)
+        {
+            _position = Handles.DoPositionHandle(_position, _rotation);
+        }
+
+        /// <summary>
+        /// Edit Scale of ref parameter in the scene view 
+        /// </summary>
+        /// <param name="_scale"></param>
+        /// <param name="_position"></param>
+        /// <param name="_rotation"></param>
+        /// <param name="_size"></param>
+        public static void ScaleHandle(ref Vector3 _scale, Vector3 _position, Quaternion _rotation, float _size)
+        {
+            _scale = Handles.DoScaleHandle(_scale, _position, _rotation, _size);
+        }
+
+        /// <summary>
+        /// Edit Rotation of ref parameter in the scene view 
+        /// </summary>
+        /// <param name="_rotation"></param>
+        /// <param name="_position"></param>
+        public static void RotationHandle(ref Quaternion _rotation, Vector3 _position)
+        {
+            _rotation = Handles.DoRotationHandle(_rotation, _position);
+        }
+
+        /// <summary>
+        /// Set current Handle Color
+        /// </summary>
+        /// <param name="_color"></param>
+        public static void SetColor(Color _color)
+        {
+            Handles.color = _color;
+        }
+
+
+        /// <summary>
+        /// Draw WireCube
+        /// </summary>
+        /// <param name="_position"></param>
+        /// <param name="_size"></param>
+        public static void DrawWireCube(Vector3 _position, Vector3 _size)
+        {
+            Handles.DrawWireCube(_position, _size);
+        }
+
+
+        /// <summary>
+        /// Draw Dotted Line
+        /// </summary>
+        /// <param name="_position1"></param>
+        /// <param name="_position2"></param>
+        /// <param name="_screenSpaceSize"></param>
+        public static void DrawDottedLine(Vector3 _position1, Vector3 _position2, float _screenSpaceSize)
+        {
+            Handles.DrawDottedLine(_position1, _position2, _screenSpaceSize);
+        }
+
+
+        /// <summary>
+        /// Draw Wire Disc
+        /// </summary>
+        /// <param name="_position"></param>
+        /// <param name="_normal"></param>
+        /// <param name="_radius"></param>
+        public static void DrawWireDisc(Vector3 _position, Vector3 _normal, float _radius)
+        {
+            Handles.DrawWireDisc(_position, _normal, _radius);
+        }
+
     }
 
     public class EditorCustom<T> : Editor where T : MonoBehaviour
