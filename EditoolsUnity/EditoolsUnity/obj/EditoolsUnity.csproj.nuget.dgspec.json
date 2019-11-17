@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\ArgentieriOlivier\\PullGithub\\EditoolsUnity\\EditoolsUnity\\EditoolsUnity\\EditoolsUnity.csproj": {}
+    "D:\\Projets\\PullGithub\\EditoolsUnity\\EditoolsUnity\\EditoolsUnity\\EditoolsUnity.csproj": {}
   },
   "projects": {
-    "D:\\ArgentieriOlivier\\PullGithub\\EditoolsUnity\\EditoolsUnity\\EditoolsUnity\\EditoolsUnity.csproj": {
+    "D:\\Projets\\PullGithub\\EditoolsUnity\\EditoolsUnity\\EditoolsUnity\\EditoolsUnity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\ArgentieriOlivier\\PullGithub\\EditoolsUnity\\EditoolsUnity\\EditoolsUnity\\EditoolsUnity.csproj",
+        "projectUniqueName": "D:\\Projets\\PullGithub\\EditoolsUnity\\EditoolsUnity\\EditoolsUnity\\EditoolsUnity.csproj",
         "projectName": "EditoolsUnity",
-        "projectPath": "D:\\ArgentieriOlivier\\PullGithub\\EditoolsUnity\\EditoolsUnity\\EditoolsUnity\\EditoolsUnity.csproj",
-        "packagesPath": "C:\\Users\\ARGE1606\\.nuget\\packages\\",
-        "outputPath": "D:\\ArgentieriOlivier\\PullGithub\\EditoolsUnity\\EditoolsUnity\\EditoolsUnity\\obj\\",
+        "projectPath": "D:\\Projets\\PullGithub\\EditoolsUnity\\EditoolsUnity\\EditoolsUnity\\EditoolsUnity.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "D:\\Projets\\PullGithub\\EditoolsUnity\\EditoolsUnity\\EditoolsUnity\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\ARGE1606\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

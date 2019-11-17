@@ -128,14 +128,27 @@
         </member>
         <member name="M:EditoolsUnity.EditoolsField.TextField(System.String,System.String@)">
             <summary>
-            Create Text field with out data
+            Create Text field with output parameter
             </summary>
             <param name="_label"></param>
             <param name="_output"></param>
         </member>
+        <member name="M:EditoolsUnity.EditoolsField.TextField(System.String,System.String)">
+            <summary>
+            Create Text field with return value
+            </summary>
+            <param name="_label"></param>
+        </member>
+        <member name="M:EditoolsUnity.EditoolsField.Vector3Field(System.String,UnityEngine.Vector3@)">
+            <summary>
+            Create Vector3 field with output parameter
+            </summary>
+            <param name="_label"></param>
+            <param name="_vector3"></param>
+        </member>
         <member name="M:EditoolsUnity.EditoolsField.Vector3Field(System.String,UnityEngine.Vector3)">
             <summary>
-            Create Vector3 field with return vector3 data
+            Create Vector3 field with return value
             </summary>
             <param name="_label"></param>
             <param name="_vector3"></param>
@@ -143,14 +156,14 @@
         </member>
         <member name="M:EditoolsUnity.EditoolsField.FloatField(System.String,System.Single@)">
             <summary>
-            Create float field with OutPut Value
+            Create float field with output parameter
             </summary>
             <param name="_label"></param>
             <param name="_output"></param>
         </member>
         <member name="M:EditoolsUnity.EditoolsField.FloatField(System.String,System.Single)">
             <summary>
-            Create float field
+            Create float field with return value
             </summary>
             <param name="_label"></param>
             <param name="_value"></param>
@@ -165,7 +178,7 @@
         </member>
         <member name="M:EditoolsUnity.EditoolsField.IntField(System.String,System.Int32)">
             <summary>
-            Create Int field
+            Create Int field with return value
             </summary>
             <param name="_label"></param>
             <param name="_value"></param>
@@ -173,19 +186,80 @@
         </member>
         <member name="M:EditoolsUnity.EditoolsField.ColorField(UnityEngine.Color,UnityEngine.Color@)">
             <summary>
-            Create Color field with out data
+            Create Color field with output parameter
             </summary>
             <param name="_color"></param>
             <param name="_outColor"></param>
         </member>
+        <member name="M:EditoolsUnity.EditoolsField.ColorField(UnityEngine.Color)">
+            <summary>
+            Create Color field with return value
+            </summary>
+            <param name="_color"></param>
+        </member>
         <member name="M:EditoolsUnity.EditoolsField.IntSlider(System.String,System.Int32@,System.Int32,System.Int32)">
             <summary>
-            Create Int Slider
+            Create Int Slider with output parameter
             </summary>
             <param name="_label"></param>
             <param name="_value"></param>
             <param name="_leftValue"></param>
             <param name="_rightValue"></param>
+        </member>
+        <member name="M:EditoolsUnity.EditoolsField.IntSlider(System.String,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Create Int Slider with return value
+            </summary>
+            <param name="_label"></param>
+            <param name="_value"></param>
+            <param name="_leftValue"></param>
+            <param name="_rightValue"></param>
+        </member>
+        <member name="M:EditoolsUnity.EditoolsField.ObjectField(UnityEngine.Object@,System.Type,System.Boolean)">
+            <summary>
+            Create ObjectField with output parameter
+            </summary>
+            <param name="_o"></param>
+            <param name="_typeObject"></param>
+            <param name="_allowSceneObject"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EditoolsUnity.EditoolsField.ObjectField(UnityEngine.Object,System.Type,System.Boolean)">
+            <summary>
+            Create ObjectField with return value
+            </summary>
+            <param name="_o"></param>
+            <param name="_typeObject"></param>
+            <param name="_allowSceneObject"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EditoolsUnity.EditoolsField.Toggle(System.String,System.Boolean@)">
+            <summary>
+            Create Toggle with output parameter
+            </summary>
+            <param name="_label"></param>
+            <param name="_value"></param>
+        </member>
+        <member name="M:EditoolsUnity.EditoolsField.Toggle(System.String,System.Boolean)">
+            <summary>
+            Create Toggle with return value
+            </summary>
+            <param name="_label"></param>
+            <param name="_value"></param>
+        </member>
+        <member name="M:EditoolsUnity.EditoolsField.EnumPopup(System.String,System.Enum@)">
+            <summary>
+            Create EnumPopup with output parameter
+            </summary>
+            <param name="_label"></param>
+            <param name="_type"></param>
+        </member>
+        <member name="M:EditoolsUnity.EditoolsField.EnumPopup(System.String,System.Enum)">
+            <summary>
+            Create EnumPopup with return parameter
+            </summary>
+            <param name="_label"></param>
+            <param name="_type"></param>
         </member>
         <member name="T:EditoolsUnity.EditoolsBox">
             <summary>
