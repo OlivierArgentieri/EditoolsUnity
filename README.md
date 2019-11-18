@@ -6,4 +6,4 @@ Library to facilitate creation of unity tools
 
 
 ## GUI element in scene :
-    - Start with BeginGUI and close by EndGUI.
+    - Need to Start with BeginGUI and close by EndGUI.
