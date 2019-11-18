@@ -4,12 +4,42 @@
         <name>EditoolsUnity</name>
     </assembly>
     <members>
-        <member name="T:EditoolsUnity.EditoolsUnity">
+        <member name="T:EditoolsUnity.EditoolsBox">
+            <summary>
+            Class box of editools
+            </summary>
+        </member>
+        <member name="M:EditoolsUnity.EditoolsBox.HelpBox(System.String,UnityEditor.MessageType)">
+            <summary>
+            Create HelpBox
+            </summary>
+            <param name="_message"></param>
+            <param name="_messageType"></param>
+        </member>
+        <member name="M:EditoolsUnity.EditoolsBox.HelpBoxWarning(System.String)">
+            <summary>
+            Create Warning HelpBox
+            </summary>
+            <param name="_message"></param>
+        </member>
+        <member name="M:EditoolsUnity.EditoolsBox.HelpBoxError(System.String)">
+            <summary>
+            Create Error Warning
+            </summary>
+            <param name="_message"></param>
+        </member>
+        <member name="M:EditoolsUnity.EditoolsBox.HelpBoxInfo(System.String)">
+            <summary>
+            Create Info Helpbox
+            </summary>
+            <param name="_message"></param>
+        </member>
+        <member name="T:EditoolsUnity.EditoolsButton">
             <summary>
             Class button of Editools
             </summary>
         </member>
-        <member name="M:EditoolsUnity.EditoolsUnity.Button(System.String,UnityEngine.Color,System.Action,System.Boolean)">
+        <member name="M:EditoolsUnity.EditoolsButton.Button(System.String,UnityEngine.Color,System.Action,System.Boolean)">
             <summary>
             Create button without parameters in callback
             </summary>
@@ -18,7 +48,7 @@
             <param name="_callback"></param>
             <param name="_showCondition"></param>
         </member>
-        <member name="M:EditoolsUnity.EditoolsUnity.Button``1(System.String,UnityEngine.Color,System.Action{``0},``0,System.Boolean)">
+        <member name="M:EditoolsUnity.EditoolsButton.Button``1(System.String,UnityEngine.Color,System.Action{``0},``0,System.Boolean)">
             <summary>
             Create button with parameter in callback
             </summary>
@@ -29,7 +59,7 @@
             <param name="_arg0"></param>
             <param name="_showCondition"></param>
         </member>
-        <member name="M:EditoolsUnity.EditoolsUnity.Button``2(System.String,UnityEngine.Color,System.Action{``0,``1},``0,``1,System.Boolean)">
+        <member name="M:EditoolsUnity.EditoolsButton.Button``2(System.String,UnityEngine.Color,System.Action{``0,``1},``0,``1,System.Boolean)">
             <summary>
             Create button with parameters in callback
             </summary>
@@ -42,7 +72,7 @@
             <param name="_arg1"></param>
             <param name="_showCondition"></param>
         </member>
-        <member name="M:EditoolsUnity.EditoolsUnity.Button``3(System.String,UnityEngine.Color,System.Action{``0,``1,``2},``0,``1,``2,System.Boolean)">
+        <member name="M:EditoolsUnity.EditoolsButton.Button``3(System.String,UnityEngine.Color,System.Action{``0,``1,``2},``0,``1,``2,System.Boolean)">
             <summary>
             Create button with parameters in callback
             </summary>
@@ -57,7 +87,7 @@
             <param name="_arg2"></param>
             <param name="_showCondition"></param>
         </member>
-        <member name="M:EditoolsUnity.EditoolsUnity.ButtonWithConfirm(System.String,UnityEngine.Color,System.Action,System.String,System.String,System.String,System.String,System.Boolean)">
+        <member name="M:EditoolsUnity.EditoolsButton.ButtonWithConfirm(System.String,UnityEngine.Color,System.Action,System.String,System.String,System.String,System.String,System.Boolean)">
             <summary>
             Create button and confirm box without parameters in callback
             </summary>
@@ -70,7 +100,7 @@
             <param name="_cancelText"></param>
             <param name="_showCondition"></param>
         </member>
-        <member name="M:EditoolsUnity.EditoolsUnity.ButtonWithConfirm``1(System.String,UnityEngine.Color,System.Action{``0},``0,System.String,System.String,System.String,System.String,System.Boolean)">
+        <member name="M:EditoolsUnity.EditoolsButton.ButtonWithConfirm``1(System.String,UnityEngine.Color,System.Action{``0},``0,System.String,System.String,System.String,System.String,System.Boolean)">
             <summary>
             Create button and confirm box with parameter in callback
             </summary>
@@ -85,7 +115,7 @@
             <param name="_cancelText"></param>
             <param name="_showCondition"></param>
         </member>
-        <member name="M:EditoolsUnity.EditoolsUnity.ButtonWithConfirm``2(System.String,UnityEngine.Color,System.Action{``0,``1},``0,``1,System.String,System.String,System.String,System.String,System.Boolean)">
+        <member name="M:EditoolsUnity.EditoolsButton.ButtonWithConfirm``2(System.String,UnityEngine.Color,System.Action{``0,``1},``0,``1,System.String,System.String,System.String,System.String,System.Boolean)">
             <summary>
             Create button and confirm box with parameters in callback
             </summary>
@@ -102,7 +132,7 @@
             <param name="_cancelText"></param>
             <param name="_showCondition"></param>
         </member>
-        <member name="M:EditoolsUnity.EditoolsUnity.ButtonWithConfirm``3(System.String,UnityEngine.Color,System.Action{``0,``1,``2},``0,``1,``2,System.String,System.String,System.String,System.String,System.Boolean)">
+        <member name="M:EditoolsUnity.EditoolsButton.ButtonWithConfirm``3(System.String,UnityEngine.Color,System.Action{``0,``1,``2},``0,``1,``2,System.String,System.String,System.String,System.String,System.Boolean)">
             <summary>
             Create button and confirm box with parameters in callback
             </summary>
@@ -120,6 +150,12 @@
             <param name="_validTest"></param>
             <param name="_cancelText"></param>
             <param name="_showCondition"></param>
+        </member>
+        <member name="T:EditoolsUnity.EditorCustom`1">
+            <summary>
+            template class to create new editor
+            </summary>
+            <typeparam name="T"></typeparam>
         </member>
         <member name="T:EditoolsUnity.EditoolsField">
             <summary>
@@ -245,77 +281,6 @@
             <param name="_label"></param>
             <param name="_type"></param>
         </member>
-        <member name="T:EditoolsUnity.EditoolsBox">
-            <summary>
-            Class box of editools
-            </summary>
-        </member>
-        <member name="M:EditoolsUnity.EditoolsBox.HelpBox(System.String,UnityEditor.MessageType)">
-            <summary>
-            Create HelpBox
-            </summary>
-            <param name="_message"></param>
-            <param name="_messageType"></param>
-        </member>
-        <member name="M:EditoolsUnity.EditoolsBox.HelpBoxWarning(System.String)">
-            <summary>
-            Create Warning HelpBox
-            </summary>
-            <param name="_message"></param>
-        </member>
-        <member name="M:EditoolsUnity.EditoolsBox.HelpBoxError(System.String)">
-            <summary>
-            Create Error Warning
-            </summary>
-            <param name="_message"></param>
-        </member>
-        <member name="M:EditoolsUnity.EditoolsBox.HelpBoxInfo(System.String)">
-            <summary>
-            Create Info Helpbox
-            </summary>
-            <param name="_message"></param>
-        </member>
-        <member name="T:EditoolsUnity.EditoolsLayout">
-            <summary>
-            Class Layout of editools
-            </summary>
-        </member>
-        <member name="M:EditoolsUnity.EditoolsLayout.Space(System.Int32)">
-            <summary>
-            Create Space with repeting parameters
-            </summary>
-            <param name="_i"></param>
-        </member>
-        <member name="M:EditoolsUnity.EditoolsLayout.Horizontal(System.Boolean)">
-            <summary>
-            Create Start or End GUILayout Horizontal
-            </summary>
-            <param name="_begin"></param>
-        </member>
-        <member name="M:EditoolsUnity.EditoolsLayout.Vertical(System.Boolean)">
-            <summary>
-            Create Start or End GUILayout Vertical
-            </summary>
-            <param name="_begin"></param>
-        </member>
-        <member name="M:EditoolsUnity.EditoolsLayout.Foldout(System.Boolean,System.String,System.Boolean)">
-            <summary>
-            Create Foldout and return the boolean value
-            </summary>
-            <param name="_foldout"></param>
-            <param name="_text"></param>
-            <param name="_toogleOnClick"></param>
-            <returns></returns>
-        </member>
-        <member name="M:EditoolsUnity.EditoolsLayout.Foldout(System.Boolean@,System.String,System.Boolean)">
-            <summary>
-            Create Foldout and return the boolean value by ref
-            </summary>
-            <param name="_value"></param>
-            <param name="_title"></param>
-            <param name="_isWide"></param>
-            <returns></returns>
-        </member>
         <member name="T:EditoolsUnity.EditoolsHandle">
             <summary>
             Control and Drawing in the 3D scene view
@@ -372,6 +337,47 @@
             <param name="_position"></param>
             <param name="_normal"></param>
             <param name="_radius"></param>
+        </member>
+        <member name="T:EditoolsUnity.EditoolsLayout">
+            <summary>
+            Class Layout of editools
+            </summary>
+        </member>
+        <member name="M:EditoolsUnity.EditoolsLayout.Space(System.Int32)">
+            <summary>
+            Create Space with repeting parameters
+            </summary>
+            <param name="_i"></param>
+        </member>
+        <member name="M:EditoolsUnity.EditoolsLayout.Horizontal(System.Boolean)">
+            <summary>
+            Create Start or End GUILayout Horizontal
+            </summary>
+            <param name="_begin"></param>
+        </member>
+        <member name="M:EditoolsUnity.EditoolsLayout.Vertical(System.Boolean)">
+            <summary>
+            Create Start or End GUILayout Vertical
+            </summary>
+            <param name="_begin"></param>
+        </member>
+        <member name="M:EditoolsUnity.EditoolsLayout.Foldout(System.Boolean,System.String,System.Boolean)">
+            <summary>
+            Create Foldout and return the boolean value
+            </summary>
+            <param name="_foldout"></param>
+            <param name="_text"></param>
+            <param name="_toogleOnClick"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EditoolsUnity.EditoolsLayout.Foldout(System.Boolean@,System.String,System.Boolean)">
+            <summary>
+            Create Foldout and return the boolean value by ref
+            </summary>
+            <param name="_value"></param>
+            <param name="_title"></param>
+            <param name="_isWide"></param>
+            <returns></returns>
         </member>
     </members>
 </doc>
