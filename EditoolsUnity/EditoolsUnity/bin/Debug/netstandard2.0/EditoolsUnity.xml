@@ -4,12 +4,12 @@
         <name>EditoolsUnity</name>
     </assembly>
     <members>
-        <member name="T:EditoolsUnity.EditoolsButton">
+        <member name="T:EditoolsUnity.EditoolsUnity">
             <summary>
             Class button of Editools
             </summary>
         </member>
-        <member name="M:EditoolsUnity.EditoolsButton.Button(System.String,UnityEngine.Color,System.Action,System.Boolean)">
+        <member name="M:EditoolsUnity.EditoolsUnity.Button(System.String,UnityEngine.Color,System.Action,System.Boolean)">
             <summary>
             Create button without parameters in callback
             </summary>
@@ -18,7 +18,7 @@
             <param name="_callback"></param>
             <param name="_showCondition"></param>
         </member>
-        <member name="M:EditoolsUnity.EditoolsButton.Button``1(System.String,UnityEngine.Color,System.Action{``0},``0,System.Boolean)">
+        <member name="M:EditoolsUnity.EditoolsUnity.Button``1(System.String,UnityEngine.Color,System.Action{``0},``0,System.Boolean)">
             <summary>
             Create button with parameter in callback
             </summary>
@@ -29,7 +29,7 @@
             <param name="_arg0"></param>
             <param name="_showCondition"></param>
         </member>
-        <member name="M:EditoolsUnity.EditoolsButton.Button``2(System.String,UnityEngine.Color,System.Action{``0,``1},``0,``1,System.Boolean)">
+        <member name="M:EditoolsUnity.EditoolsUnity.Button``2(System.String,UnityEngine.Color,System.Action{``0,``1},``0,``1,System.Boolean)">
             <summary>
             Create button with parameters in callback
             </summary>
@@ -42,7 +42,7 @@
             <param name="_arg1"></param>
             <param name="_showCondition"></param>
         </member>
-        <member name="M:EditoolsUnity.EditoolsButton.Button``3(System.String,UnityEngine.Color,System.Action{``0,``1,``2},``0,``1,``2,System.Boolean)">
+        <member name="M:EditoolsUnity.EditoolsUnity.Button``3(System.String,UnityEngine.Color,System.Action{``0,``1,``2},``0,``1,``2,System.Boolean)">
             <summary>
             Create button with parameters in callback
             </summary>
@@ -57,7 +57,7 @@
             <param name="_arg2"></param>
             <param name="_showCondition"></param>
         </member>
-        <member name="M:EditoolsUnity.EditoolsButton.ButtonWithConfirm(System.String,UnityEngine.Color,System.Action,System.String,System.String,System.String,System.String,System.Boolean)">
+        <member name="M:EditoolsUnity.EditoolsUnity.ButtonWithConfirm(System.String,UnityEngine.Color,System.Action,System.String,System.String,System.String,System.String,System.Boolean)">
             <summary>
             Create button and confirm box without parameters in callback
             </summary>
@@ -70,7 +70,7 @@
             <param name="_cancelText"></param>
             <param name="_showCondition"></param>
         </member>
-        <member name="M:EditoolsUnity.EditoolsButton.ButtonWithConfirm``1(System.String,UnityEngine.Color,System.Action{``0},``0,System.String,System.String,System.String,System.String,System.Boolean)">
+        <member name="M:EditoolsUnity.EditoolsUnity.ButtonWithConfirm``1(System.String,UnityEngine.Color,System.Action{``0},``0,System.String,System.String,System.String,System.String,System.Boolean)">
             <summary>
             Create button and confirm box with parameter in callback
             </summary>
@@ -85,7 +85,7 @@
             <param name="_cancelText"></param>
             <param name="_showCondition"></param>
         </member>
-        <member name="M:EditoolsUnity.EditoolsButton.ButtonWithConfirm``2(System.String,UnityEngine.Color,System.Action{``0,``1},``0,``1,System.String,System.String,System.String,System.String,System.Boolean)">
+        <member name="M:EditoolsUnity.EditoolsUnity.ButtonWithConfirm``2(System.String,UnityEngine.Color,System.Action{``0,``1},``0,``1,System.String,System.String,System.String,System.String,System.Boolean)">
             <summary>
             Create button and confirm box with parameters in callback
             </summary>
@@ -102,7 +102,7 @@
             <param name="_cancelText"></param>
             <param name="_showCondition"></param>
         </member>
-        <member name="M:EditoolsUnity.EditoolsButton.ButtonWithConfirm``3(System.String,UnityEngine.Color,System.Action{``0,``1,``2},``0,``1,``2,System.String,System.String,System.String,System.String,System.Boolean)">
+        <member name="M:EditoolsUnity.EditoolsUnity.ButtonWithConfirm``3(System.String,UnityEngine.Color,System.Action{``0,``1,``2},``0,``1,``2,System.String,System.String,System.String,System.String,System.Boolean)">
             <summary>
             Create button and confirm box with parameters in callback
             </summary>
@@ -215,15 +215,6 @@
             <param name="_leftValue"></param>
             <param name="_rightValue"></param>
         </member>
-        <member name="M:EditoolsUnity.EditoolsField.ObjectField(UnityEngine.Object@,System.Type,System.Boolean)">
-            <summary>
-            Create ObjectField with output parameter
-            </summary>
-            <param name="_o"></param>
-            <param name="_typeObject"></param>
-            <param name="_allowSceneObject"></param>
-            <returns></returns>
-        </member>
         <member name="M:EditoolsUnity.EditoolsField.ObjectField(UnityEngine.Object,System.Type,System.Boolean)">
             <summary>
             Create ObjectField with return value
@@ -246,13 +237,6 @@
             </summary>
             <param name="_label"></param>
             <param name="_value"></param>
-        </member>
-        <member name="M:EditoolsUnity.EditoolsField.EnumPopup(System.String,System.Enum@)">
-            <summary>
-            Create EnumPopup with output parameter
-            </summary>
-            <param name="_label"></param>
-            <param name="_type"></param>
         </member>
         <member name="M:EditoolsUnity.EditoolsField.EnumPopup(System.String,System.Enum)">
             <summary>
