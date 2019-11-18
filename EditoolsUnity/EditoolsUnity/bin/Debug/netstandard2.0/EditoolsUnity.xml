@@ -379,5 +379,70 @@
             <param name="_isWide"></param>
             <returns></returns>
         </member>
+        <member name="M:EditoolsUnity.EditoolsSceneGUI.BeginGUI">
+            <summary>
+            Begin  GUI
+            </summary>
+        </member>
+        <member name="M:EditoolsUnity.EditoolsSceneGUI.EndGUI">
+            <summary>
+            End GUI
+            </summary>
+        </member>
+        <member name="M:EditoolsUnity.EditoolsSceneGUI.BeginGUI(System.Boolean)">
+            <summary>
+            Start and close GUI easily with bool parameter
+            </summary>
+            <param name="_begin"></param>
+        </member>
+        <member name="M:EditoolsUnity.EditoolsSceneGUI.BeginArea(UnityEngine.Rect)">
+            <summary>
+            Create Area
+            </summary>
+            <param name="_rect"></param>
+        </member>
+        <member name="M:EditoolsUnity.EditoolsSceneGUI.EndArea">
+            <summary>
+            Close Area
+            </summary>
+        </member>
+        <member name="M:EditoolsUnity.EditoolsSceneGUI.Box(System.String)">
+            <summary>
+            Create Box
+            </summary>
+            <param name="_text"></param>
+        </member>
+        <member name="M:EditoolsUnity.EditoolsSceneGUI.Box(System.String,UnityEngine.GUIStyle)">
+            <summary>
+            Create Box with style
+            </summary>
+            <param name="_text"></param>
+            <param name="_guiStyle"></param>
+        </member>
+        <member name="M:EditoolsUnity.EditoolsSceneGUI.Button(System.String,System.Action)">
+            <summary>
+            create Button
+            </summary>
+            <param name="_text"></param>
+            <param name="_callback"></param>
+        </member>
+        <member name="M:EditoolsUnity.EditoolsSceneGUI.Button(System.String,System.Action,UnityEngine.GUIStyle)">
+            <summary>
+            create Button with style
+            </summary>
+            <param name="_text"></param>
+            <param name="_callback"></param>
+            <param name="_style"></param>
+        </member>
+        <member name="M:EditoolsUnity.EditoolsSceneGUI.SetStyle(UnityEngine.Color,UnityEngine.TextAnchor,EditoolsUnity.StyleMode,UnityEngine.FontStyle)">
+            <summary>
+            Set Style to GUI object
+            </summary>
+            <param name="_color"></param>
+            <param name="_alignment"></param>
+            <param name="_styleMode"></param>
+            <param name="_style"></param>
+            <returns></returns>
+        </member>
     </members>
 </doc>
