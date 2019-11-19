@@ -84,7 +84,5 @@ namespace EditoolsUnity
         {
             Handles.DrawWireDisc(_position, _normal, _radius);
         }
-
     }
-        
 }

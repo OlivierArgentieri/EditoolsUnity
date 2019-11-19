@@ -7,7 +7,7 @@ namespace EditoolsUnity
     /// <summary>
     /// Class button of Editools
     /// </summary>
-    class EditoolsButton
+    public static class EditoolsButton
     {
         /// <summary>
         /// Create button without parameters in callback
