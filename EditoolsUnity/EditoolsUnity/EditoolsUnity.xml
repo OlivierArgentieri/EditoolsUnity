@@ -293,6 +293,14 @@
             <param name="_position"></param>
             <param name="_rotation"></param>
         </member>
+        <member name="M:EditoolsUnity.EditoolsHandle.PositionHandle(UnityEngine.Vector3,UnityEngine.Quaternion)">
+            <summary>
+            Create position handle and returne new position
+            </summary>
+            <param name="_position"></param>
+            <param name="_rotation"></param>
+            <returns>return new vector3 P       osition</returns>
+        </member>
         <member name="M:EditoolsUnity.EditoolsHandle.ScaleHandle(UnityEngine.Vector3@,UnityEngine.Vector3,UnityEngine.Quaternion,System.Single)">
             <summary>
             Edit Scale of ref parameter in the scene view 
@@ -302,12 +310,30 @@
             <param name="_rotation"></param>
             <param name="_size"></param>
         </member>
+        <member name="M:EditoolsUnity.EditoolsHandle.ScaleHandle(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Quaternion,System.Single)">
+            <summary>
+            Create position handle and returne new Scale
+            </summary>
+            <param name="_scale"></param>
+            <param name="_position"></param>
+            <param name="_rotation"></param>
+            <param name="_size"></param>
+            <returns>return new vector3 Scale</returns>
+        </member>
         <member name="M:EditoolsUnity.EditoolsHandle.RotationHandle(UnityEngine.Quaternion@,UnityEngine.Vector3)">
             <summary>
             Edit Rotation of ref parameter in the scene view 
             </summary>
             <param name="_rotation"></param>
             <param name="_position"></param>
+        </member>
+        <member name="M:EditoolsUnity.EditoolsHandle.RotationHandle(UnityEngine.Quaternion,UnityEngine.Vector3)">
+            <summary>
+            Create position handle and returne new Scale
+            </summary>
+            <param name="_rotation"></param>
+            <param name="_position"></param>
+            <returns> new quaternion rotation </returns>
         </member>
         <member name="M:EditoolsUnity.EditoolsHandle.SetColor(UnityEngine.Color)">
             <summary>
@@ -337,6 +363,28 @@
             <param name="_position"></param>
             <param name="_normal"></param>
             <param name="_radius"></param>
+        </member>
+        <member name="M:EditoolsUnity.EditoolsHandle.DrawSolidDisc(UnityEngine.Vector3,UnityEngine.Vector3,System.Single)">
+            <summary>
+            Draw Solid Disc
+            </summary>
+            <param name="_position"></param>
+            <param name="_normal"></param>
+            <param name="_radius"></param>
+        </member>
+        <member name="M:EditoolsUnity.EditoolsHandle.DrawLine(UnityEngine.Vector3,UnityEngine.Vector3)">
+            <summary>
+            Draw Line
+            </summary>
+            <param name="_position1"></param>
+            <param name="_position2"></param>
+        </member>
+        <member name="M:EditoolsUnity.EditoolsHandle.Label(UnityEngine.Vector3,System.String)">
+            <summary>
+            Create Label
+            </summary>
+            <param name="_position"></param>
+            <param name="_message"></param>
         </member>
         <member name="T:EditoolsUnity.EditoolsLayout">
             <summary>
