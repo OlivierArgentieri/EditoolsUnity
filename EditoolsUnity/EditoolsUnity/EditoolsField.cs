@@ -140,6 +140,29 @@ namespace EditoolsUnity
             return EditorGUILayout.IntSlider(_label, _value, _leftValue, _rightValue);
         }
 
+        /// <summary>
+        /// Create Int Float with output parameter
+        /// </summary>
+        /// <param name="_label"></param>
+        /// <param name="_value"></param>
+        /// <param name="_leftValue"></param>
+        /// <param name="_rightValue"></param>
+        public static void FloatSlider(string _label, ref float _value, float _leftValue, float _rightValue)
+        {
+            _value = EditorGUILayout.Slider(_label, _value, _leftValue, _rightValue);
+        }
+
+        /// <summary>
+        /// Create Float Slider with return value
+        /// </summary>
+        /// <param name="_label"></param>
+        /// <param name="_value"></param>
+        /// <param name="_leftValue"></param>
+        /// <param name="_rightValue"></param>
+        public static float FloatSlider(string _label, float _value, float _leftValue, float _rightValue)
+        {
+            return EditorGUILayout.Slider(_label, _value, _leftValue, _rightValue);
+        }
 
 
         /*

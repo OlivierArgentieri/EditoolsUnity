@@ -251,6 +251,24 @@
             <param name="_leftValue"></param>
             <param name="_rightValue"></param>
         </member>
+        <member name="M:EditoolsUnity.EditoolsField.FloatSlider(System.String,System.Single@,System.Single,System.Single)">
+            <summary>
+            Create Int Float with output parameter
+            </summary>
+            <param name="_label"></param>
+            <param name="_value"></param>
+            <param name="_leftValue"></param>
+            <param name="_rightValue"></param>
+        </member>
+        <member name="M:EditoolsUnity.EditoolsField.FloatSlider(System.String,System.Single,System.Single,System.Single)">
+            <summary>
+            Create Float Slider with return value
+            </summary>
+            <param name="_label"></param>
+            <param name="_value"></param>
+            <param name="_leftValue"></param>
+            <param name="_rightValue"></param>
+        </member>
         <member name="M:EditoolsUnity.EditoolsField.ObjectField(UnityEngine.Object,System.Type,System.Boolean)">
             <summary>
             Create ObjectField with return value
