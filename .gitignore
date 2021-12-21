@@ -30,3 +30,6 @@
 *.app
 
 EditoolsUnity/EditoolsUnity/.vs/**
+EditoolsUnity/EditoolsUnity/[Oo]bj
+EditoolsUnity/EditoolsUnity/.idea
+EditoolsUnity/EditoolsUnity/bin
