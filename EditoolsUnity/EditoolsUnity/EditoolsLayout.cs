@@ -61,5 +61,24 @@ namespace EditoolsUnity
         /// <param name="_isWide"></param>
         /// <returns></returns>
         public static bool Foldout(ref bool _value, string _title, bool _isWide = false) => _value = EditorGUILayout.Foldout(_value, _title, _isWide);
+
+        /// <summary>
+        /// Create ScrollView
+        /// </summary>
+        /// <param name="_width"></param>
+        /// <param name="_height"></param>
+        /// <param name="_pos"></param>
+        public static void BeginScrollView(float _width, float _height, ref Vector2 _pos)
+        {
+            _pos = EditorGUILayout.BeginScrollView(_pos, GUILayout.Width(_width), GUILayout.Height(_height));
+        }
+        
+        /// <summary>
+        /// End ScrollView
+        /// </summary>
+        public static void EndScrollView()
+        {
+            EditorGUILayout.EndScrollView();
+        }
     }
 }
