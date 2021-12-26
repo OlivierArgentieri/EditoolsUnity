@@ -26,4 +26,8 @@ jobs:
         ls -l
         cd ./EditoolsUnity
         ls -l
+        cd ./bin
+        ls -l
+        cd ./debug
+        ls -l
 
