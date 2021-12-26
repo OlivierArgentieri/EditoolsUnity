@@ -24,6 +24,6 @@ jobs:
       run: |
         cd ./EditoolsUnity
         ls -l
-        cd ./EditoolsUnity/EditoolsUnity
+        cd ./EditoolsUnity
         ls -l
 
