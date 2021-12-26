@@ -28,6 +28,6 @@ jobs:
         ls -l
         cd ./bin
         ls -l
-        cd ./debug
+        cd ./Release
         ls -l
 
