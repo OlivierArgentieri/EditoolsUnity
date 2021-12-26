@@ -30,4 +30,5 @@ jobs:
         ls -l
         cd ./Release
         ls -l
-
+        cd ./netstandard2.0
+        ls -l
