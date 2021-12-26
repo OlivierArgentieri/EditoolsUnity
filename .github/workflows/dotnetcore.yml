@@ -22,4 +22,8 @@ jobs:
         dotnet build --configuration Release
     - name: Build with dotnet
       run: |
+        cd ./EditoolsUnity
         ls -l
+        cd ./EditoolsUnity/EditoolsUnity
+        ls -l
+
