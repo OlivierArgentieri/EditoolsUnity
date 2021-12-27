@@ -4,6 +4,8 @@ on:
   push:
     branches: 
       - master
+    tags:
+      - "v*.*.*"
 
 jobs:
   build:
@@ -20,7 +22,7 @@ jobs:
       run: |
         cd ./EditoolsUnity/EditoolsUnity
         dotnet build --configuration Release
-    - name: Build with dotnet
+    - name: Debug
       run: |
         cd ./EditoolsUnity
         ls -l
@@ -33,9 +35,8 @@ jobs:
         cd ./netstandard2.0
         ls -l
 
-    - name: release
+    - name: Release
       uses: softprops/action-gh-release@v1
-      if: startsWith(github.ref, 'refs/tags/')
       with:
         files: ./EditoolsUnity/EditoolsUnity/bin/Release/netstandard2.0/EditoolsUnity.dll
         
