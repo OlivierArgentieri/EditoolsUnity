@@ -9,21 +9,26 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v1
-    - name: Setup .NET Core
-      uses: actions/setup-dotnet@v1
-      with:
-        dotnet-version: 2.2.108
-    - name: Build with dotnet
-      run: |
-        cd ./EditoolsUnity/EditoolsUnity
-        dotnet build --configuration Release
+    - name: Get the version
+      id: get_version
+      run: echo ::set-output name=VERSION::${GITHUB_REF/refs\/tags\//}
+    
+#    - uses: actions/checkout@v1
+#    - name: Setup .NET Core
+#      uses: actions/setup-dotnet@v1
+#      with:
+#        dotnet-version: 2.2.108
+#    - name: Build with dotnet
+#      run: |
+#        cd ./EditoolsUnity/EditoolsUnity
+#        dotnet build --configuration Release
+        
     - name: Debug
       run: |
+        echo ${{ steps.get_version.outputs.VERSION }}
         cd ./EditoolsUnity
         ls -l
         cd ./EditoolsUnity
