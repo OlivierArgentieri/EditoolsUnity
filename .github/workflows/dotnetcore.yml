@@ -32,14 +32,23 @@ jobs:
         ls -l
         cd ./netstandard2.0
         ls -l
-    - name: create release
-      run: |
-        set -x
-        assets=()
-        assets+=("-a" "EditoolsUnity.dll")
-        tag_name="${TAG_NAME##*/}"
-        hub release create "${assets[@]}" -m "$tag_name" "$tag_name"
+    - name: release
+      uses: actions/create-release@v1
+      id: create_release
+      with:
+        draft: false
+        prerelease: false
+        release_name: Editoolsnity
+        tag_name: ${{ github.ref }} 
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         TAG_NAME: "EditoolsUnity"
-    
+
+    - name: upload assets
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ github.token }}
+      with:
+         upload_url: ${{ steps.create_release.outputs.upload_url }}
+         asset_path: ./EditoolsUnity/EditoolsUnity/bin/Release/netstandard2.0/EditoolsUnity.dll
+         asset_name: EditoolsUnity.dll
