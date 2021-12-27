@@ -39,7 +39,7 @@ jobs:
       with:
         draft: false
         prerelease: false
-        release_name: Editoolsnity
+        release_name: EditoolsUnity
         tag_name: ${{ github.ref }} 
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
