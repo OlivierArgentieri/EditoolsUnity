@@ -32,3 +32,15 @@ jobs:
         ls -l
         cd ./netstandard2.0
         ls -l
+    - name: create release
+      run: |
+        set -x
+        assets=()
+        assets+=("-a" "EditoolsUnity.dll")
+        done
+        tag_name="${TAG_NAME##*/}"
+        hub release create "${assets[@]}" -m "$tag_name" "$tag_name"
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        TAG_NAME: "EditoolsUnity"
+    
