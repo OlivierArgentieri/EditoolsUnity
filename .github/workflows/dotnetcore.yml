@@ -37,7 +37,6 @@ jobs:
         set -x
         assets=()
         assets+=("-a" "EditoolsUnity.dll")
-        done
         tag_name="${TAG_NAME##*/}"
         hub release create "${assets[@]}" -m "$tag_name" "$tag_name"
       env:
