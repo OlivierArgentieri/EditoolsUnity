@@ -41,5 +41,7 @@ jobs:
     - name: Release
       uses: softprops/action-gh-release@v1
       with:
-        files: ./EditoolsUnity/EditoolsUnity/bin/Release/netstandard2.0/EditoolsUnity.dll
+        files: |
+          ./EditoolsUnity/EditoolsUnity/bin/Release/netstandard2.0/EditoolsUnity.dll
+          ./EditoolsUnity/EditoolsUnity/bin/Release/netstandard2.0/EditoolsUnity.xml
         
