@@ -1,5 +1,5 @@
 # EditoolsUnity
 
-![](https://github.com/olivierargentieri/editoolsunity/workflows/.NET%20Core/badge.svg)
+[![.NET Core](https://github.com/OlivierArgentieri/EditoolsUnity/actions/workflows/dotnetcore.yml/badge.svg)](https://github.com/OlivierArgentieri/EditoolsUnity/actions/workflows/dotnetcore.yml)
 
 Library to facilitate creation of unity tools
