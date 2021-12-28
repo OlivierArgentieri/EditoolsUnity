@@ -23,20 +23,7 @@ jobs:
       run: |
         cd ./EditoolsUnity/EditoolsUnity
         dotnet build --configuration Release
-        
-    - name: Debug
-      run: |
-        echo ${{ steps.get_version.outputs.VERSION }}
-        cd ./EditoolsUnity
-        ls -l
-        cd ./EditoolsUnity
-        ls -l
-        cd ./bin
-        ls -l
-        cd ./Release
-        ls -l
-        cd ./netstandard2.0
-        ls -l
+
 
     - name: Release
       uses: softprops/action-gh-release@v1
