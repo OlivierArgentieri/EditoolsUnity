@@ -31,4 +31,14 @@ jobs:
         files: |
           ./EditoolsUnity/EditoolsUnity/bin/Release/netstandard2.0/EditoolsUnity.dll
           ./EditoolsUnity/EditoolsUnity/bin/Release/netstandard2.0/EditoolsUnity.xml
+    
+    - name: Release
+      uses: ActionwareIO/branch-push-action@action
+      with:
+        branch: prod
+        files: |
+          README.md
+          action.yml
+          ./dist/index.js
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         
